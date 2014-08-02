@@ -1,12 +1,33 @@
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-baseurl: ""
-url: "http://yourdomain.com"
-twitter_username: jekyllrb
-github_username:  jekyll
+# Dependencies
+markdown:         redcarpet
+highlighter:      true
 
-# Build settings
-markdown: kramdown
-permalink: pretty
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Dan Kraus
+tagline:          Web Application Developer
+url:              dskraus.com
+paginate:         1
+baseurl:          /
+author:
+  name:           Dan Kraus
+  url:            http://dskraus.com
+  email:          dskraus@gmail.com
+
+
+# Gravatar
+gravatar:         http://www.gravatar.com/avatar/7362bb5fa1a449cbaf3211d5dbeb02aa.png
+
+# Sidebar external links
+links:
+  -
+    title: LinkedIn
+    url: https://www.linkedin.com/pub/dan-kraus/3/3b0/b12
+  -
+    title: GitHub
+    url: https://github.com/dskraus
+  -
+    title: Twitter
+    url: https://twitter.com/DanKrausDev
