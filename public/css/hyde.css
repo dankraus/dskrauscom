@@ -59,7 +59,7 @@ html {
   text-align: center;
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
-  background-color: #202020;
+  background: url(public/images/bg.gif);
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -74,12 +74,12 @@ html {
 
 /* Sidebar links */
 .sidebar a {
-  color: #B3B11D;
+  color: #886600;
 }
 
 /* About section */
 .sidebar-about h1 {
-  color: #B3B11D;
+  color: #886600;
   margin-top: 0;
   font-family: "Open Sans", serif;
   font-size: 1.9rem;
@@ -90,11 +90,12 @@ html {
   padding: 0.1rem;
   width: 80px;
   height: 80px;
+  margin: 0 auto;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  background-color: #807F7D;
-  margin: 0 auto;
+  background-color: #323232;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.6);
 }
 
 @media (min-width: 48em) {
@@ -272,6 +273,15 @@ a.sidebar-nav-item:focus {
 /* Brown */
 .theme-base-0f .sidebar {
   background-color: #473E20;
+}
+.theme-base-0f .content a,
+.theme-base-0f .related-posts li a:hover {
+  color: #473E20;
+}
+
+/* dan theme */
+.theme-base-dan .sidebar {
+  background: url(/public/images/bg.gif);
 }
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
