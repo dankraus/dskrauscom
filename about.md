@@ -3,28 +3,17 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+I'm a web developer who loves to learn new stuff, likes to work across the full-stack, and experiment with Internet things.
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+My day-to-day has me working with ColdFusion (Railo), MySQL (MariaDB), JavaScript (jQuery, AngularJS). I like playing with Ruby and Rails, NodeJS, and whatever else catch my interest. Check out my [LinkedIn](https://www.linkedin.com/pub/dan-kraus/3/3b0/b12) for work experience.
 
-There are currently two themes built on Poole:
+I call Saint Louis, MO my home now but I lived and worked in Boston, MA and was born and raised on Long Island, NY. I'm a man of many hobbies from programming, to music, to video games, to Star Wars collecting.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+I'm a member of the [R2 Builders Group](http://astromech.net) and [Saint Louis R2 Builders Group](https://facebook.com/r2stl). I built a 1:1 scale replica of R2-D2 mostly from scratch powered by Arduino with lights, sounds, and full remote control via an Xbox 360 controller. I frequent conventions and educational outreach programs for kids at events like at the Saint Louis Science Center and art and science fairs.
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+I'm currently working for Top of Mind Networks as a Software Developer working on a sweet app called Surefire.
 
-## Setup
 
-Some fun facts about the setup of this project include:
+*"Somewhere, something incredible is waiting to be known." - Carl Sagan*
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+![Dan's R2-D2 and a Jawa Costumer](/public/images/r2-d2.jpg "Dan's R2-D2 and a Jawa Costumer")
