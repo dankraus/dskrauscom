@@ -5,7 +5,7 @@ title: About
 
 I'm a web developer who loves to learn new stuff, likes to work across the full-stack, and experiment with Internet things.
 
-My day-to-day has me working with ColdFusion (Railo), MySQL (MariaDB), JavaScript (jQuery, AngularJS). I like playing with Ruby and Rails, NodeJS, and whatever else catch my interest. Check out my [LinkedIn](https://www.linkedin.com/pub/dan-kraus/3/3b0/b12) for work experience.
+My day-to-day has me working with ColdFusion (Railo), MySQL (MariaDB), JavaScript (jQuery, AngularJS). I like playing with Ruby and Rails, NodeJS, and whatever else catches my interest. Check out my [LinkedIn](https://www.linkedin.com/pub/dan-kraus/3/3b0/b12) for work experience.
 
 I call Saint Louis, MO my home now but I lived and worked in Boston, MA and was born and raised on Long Island, NY. I'm a man of many hobbies from programming, to music, to video games, to Star Wars collecting.
 
