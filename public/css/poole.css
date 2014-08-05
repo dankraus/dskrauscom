@@ -354,7 +354,6 @@ tbody tr:nth-child(odd) th {
 
 /* Related posts */
 .related {
-  padding-top: 2rem;
   padding-bottom: 2rem;
   border-top: 1px solid #eee;
 }
@@ -375,6 +374,12 @@ tbody tr:nth-child(odd) th {
 }
 .related-posts li a:hover small {
   color: inherit;
+}
+
+/* Commends */
+.comments {
+  padding-bottom: 2rem;
+  border-top: 1px solid #eee;
 }
 
 
