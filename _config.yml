@@ -9,12 +9,12 @@ permalink:        pretty
 title:            Dan Kraus
 tagline:          Web Application Developer
 description:      "Web Developer, Star Wars fan and collector, R2-D2 Builder, Cool Dude"
-url:              dskraus.com
+url:              www.dskraus.com
 paginate:         5
 baseurl:          /
 author:
   name:           Dan Kraus
-  url:            http://dskraus.com
+  url:            http://www.dskraus.com
   email:          dskraus@gmail.com
 
 
