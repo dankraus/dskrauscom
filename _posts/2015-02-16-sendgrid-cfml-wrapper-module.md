@@ -11,8 +11,11 @@ I referenced SendGrid's official [NodeJS](https://github.com/sendgrid/sendgrid-n
 ## Stuff I've learned from this project:
 
 * Again, it's so nice to be able to refactor a bunch of stuff and be confident things still work. WRITE TESTS!
+
 * CommandBox is pretty slick. It was very handy to spin up a server and run my TestBox tests. Package management is sweet and it's high-time the CFML world has something.
+
 * Also my first go into a ColdBox module, referenced some other projects for implementation. See the [sendgrid-cfml project on GitHub](https://github.com/dankraus/sendgrid-cfml) page for thanks.
+
 * I've never read environment variables with CFML before. That was handy to publish tests without my SendGrid credentials in place. Quite Easy!
 
         var system = createObject("java", "java.lang.System");
