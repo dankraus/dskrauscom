@@ -2,6 +2,7 @@
 layout: post
 title: "SendGrid-CFML: Wrapper Lib and ColdBox Module"
 comments: true
+pygments: true
 ---
 
 I've released a wrapper library to send email with SendGrid that is also packaged as a ColdBox module. Checkout [sendgrid-cfml](https://github.com/dankraus/sendgrid-cfml). It's on [ForgeBox](http://www.coldbox.org/forgebox/view/sendgrid-cfml) too! From inside CommandBox, you can do `install sendgrid-cfml` and install the module and add it as a dependency to your project in the `box.json` in one go! I still have to write documentation but there are a few examples for working with it.
@@ -18,20 +19,24 @@ I referenced SendGrid's official [NodeJS](https://github.com/sendgrid/sendgrid-n
 
 * I've never read environment variables with CFML before. That was handy to publish tests without my SendGrid credentials in place. Quite Easy!
 
-        var system = createObject("java", "java.lang.System");
-        var env = system.getenv();
-        var sgUsername = env['SENDGRID_USERNAME'];
+{% highlight cfc %}
+var system = createObject("java", "java.lang.System");
+var env = system.getenv();
+var sgUsername = env['SENDGRID_USERNAME'];
+{% endhighlight %}
 
 * I've also never used RamDisk before. This library lets you attach files to an email by referencing a URI. It downloads the file and stores it in RamDisk, sends it in the API request, and deletes it. Basically works just like any other file.
 
-        this.ramDiskFolder = 'ram:///sendgrid-cfml#GetTickCount()#/';
+{% highlight cfc %}
+this.ramDiskFolder = 'ram:///sendgrid-cfml#GetTickCount()#/';
 
-        private string function writeToRamDisk(required string filename, required binary content) {
-        var ramPath = '#this.ramDiskFolder##arguments.filename#';
-            if(not directoryExists(this.ramDiskFolder)){
-                 directoryCreate(this.ramDiskFolder);
-            }
-            fileWrite('#this.ramDiskFolder##arguments.filename#', arguments.content);
+private string function writeToRamDisk(required string filename, required binary content) {
+var ramPath = '#this.ramDiskFolder##arguments.filename#';
+    if(not directoryExists(this.ramDiskFolder)){
+         directoryCreate(this.ramDiskFolder);
+    }
+    fileWrite('#this.ramDiskFolder##arguments.filename#', arguments.content);
 
-            return ramPath;
-        }
+    return ramPath;
+}
+{% endhighlight %}
