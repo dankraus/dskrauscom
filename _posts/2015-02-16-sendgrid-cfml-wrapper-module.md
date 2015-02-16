@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SendGrid-CFML: Wrapper Lib and ColdBox Module
+title: "SendGrid-CFML: Wrapper Lib and ColdBox Module"
 comments: true
 ---
 
