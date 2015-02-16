@@ -24,11 +24,11 @@ gravatar:         http://www.gravatar.com/avatar/7362bb5fa1a449cbaf3211d5dbeb02a
 # Sidebar external links
 links:
   -
-    title: LinkedIn
-    url: https://www.linkedin.com/pub/dan-kraus/3/3b0/b12
+    title: Twitter
+    url: https://twitter.com/DanKrausDev
   -
     title: GitHub
     url: https://github.com/dankraus
   -
-    title: Twitter
-    url: https://twitter.com/DanKrausDev
+    title: LinkedIn
+    url: https://www.linkedin.com/pub/dan-kraus/3/3b0/b12
