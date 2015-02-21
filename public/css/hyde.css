@@ -58,8 +58,7 @@ html {
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(255,255,255,.5);
-  background: url(public/images/bg.gif);
+  color: #8B8A89;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -304,7 +303,7 @@ a.sidebar-nav-item:focus {
 
 /* dan theme */
 .theme-base-dan .sidebar {
-  background: url(/public/images/bg.gif);
+  background: #1A1816;
 }
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
