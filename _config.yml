@@ -17,6 +17,14 @@ author:
   url:            http://www.dskraus.com
   email:          dskraus@gmail.com
 
+assets:
+  sources:
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/images
+  js_compressor:  uglifier
+  css_compressor: sass
+
 
 # Gravatar
 gravatar:         http://www.gravatar.com/avatar/7362bb5fa1a449cbaf3211d5dbeb02aa.png
