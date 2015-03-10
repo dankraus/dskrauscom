@@ -46,4 +46,4 @@ component output="false" {
 
 That's it. Looks a lot more like the the Ruby example. In fact, I prefer the elvis to the or operator here. It's similar to the ternary expression in one go and is not confused with `||` a tradtional boolean operator. I could see myself doing this a lot where simple values are being assigned when needing to check for the existence of a key in a struct.
 
-I've heard Adobe ColdFusion has implemented the elvis operator in CF11 but buy some reports it behaves unexpectedly and has not been fixed in any patches so you may want to sit tight if you're running Adobe CF as of right now. So far in my limited use of it in Railo, it seems to be ok so far.
+I've heard Adobe ColdFusion has implemented the elvis operator in CF11 but some reports it behaves unexpectedly and has not been fixed in any patches so you may want to sit tight if you're running Adobe CF as of right now. So far in my limited use of it in Railo, it seems to be ok.
