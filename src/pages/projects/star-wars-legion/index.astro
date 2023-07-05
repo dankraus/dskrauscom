@@ -1,0 +1,32 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+const pageTitle = "Star Wars Legion";
+const allProjects = await Astro.glob("./*.mdx");
+allProjects.sort(
+  (a, b) =>
+    new Date(b.frontmatter.publishedOn).getTime() -
+    new Date(a.frontmatter.publishedOn).getTime()
+);
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  {
+    allProjects.map((project) => (
+      <>
+        <a href={project.url}>
+          <img
+            src={project.frontmatter.image.url}
+            alt={project.frontmatter.image.alt}
+          />
+        </a>
+        <h2>
+          <a href={project.url}>{project.frontmatter.title}</a>
+        </h2>
+        <h3>{project.frontmatter.publishedOn}</h3>
+        <p>{project.frontmatter.preview}</p>
+
+        <a href={project.url}>Read More</a>
+      </>
+    ))
+  }
+</BaseLayout>

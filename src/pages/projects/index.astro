@@ -1,0 +1,21 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+const pageTitle = "Projects";
+const allStarWarsLegionsProjects = await Astro.glob("./star-wars-legion/*.mdx");
+---
+
+<BaseLayout pageTitle={pageTitle}>
+    <h2>Star Wars Legion</h2>
+    <ul>
+        {
+            allStarWarsLegionsProjects.map((project) => (
+                <li>
+                    <a href={project.url}>{project.frontmatter.title}</a>
+                    <p class="project-preview-text">
+                        {project.frontmatter.preview}
+                    </p>
+                </li>
+            ))
+        }
+    </ul>
+</BaseLayout>

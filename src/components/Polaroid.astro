@@ -1,0 +1,9 @@
+---
+const { imagePath, title } = Astro.props;
+---
+
+<div class="item">
+    <div class="polaroid">
+        <img src={imagePath} width="275" title={title} />
+    </div>
+</div>
