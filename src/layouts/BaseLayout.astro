@@ -15,7 +15,7 @@ const { pageTitle } = Astro.props;
     <title>{pageTitle} - Dan Kraus</title>
   </head>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-47XQNS47FG"
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-6371238-2"
   ></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -24,19 +24,30 @@ const { pageTitle } = Astro.props;
     }
     gtag("js", new Date());
 
-    gtag("config", "G-47XQNS47FG");
+    gtag("config", "UA-6371238-2");
   </script>
 
-  <body>
-    <div class="page-wrapper">
-      <Header />
-      <main>
-        <article>
-          <h1>{pageTitle}</h1>
-          <slot />
-        </article>
-      </main>
-      <Footer />
-    </div>
-  </body>
+   >
 </html>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-47XQNS47FG");
+</script>
+
+<body>
+  <div class="page-wrapper">
+    <Header />
+    <main>
+      <article>
+        <h1>{pageTitle}</h1>
+        <slot />
+      </article>
+    </main>
+    <Footer />
+  </div>
+</body>
