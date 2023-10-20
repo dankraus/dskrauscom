@@ -6,6 +6,9 @@
       "@components/*": [
         "src/components/*"
       ],
+      "@images/*": [
+        "src/images/*"
+      ],
       "@layouts/*": [
         "src/layouts/*"
       ]

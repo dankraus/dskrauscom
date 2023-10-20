@@ -1,9 +1,10 @@
 ---
+import { Image } from "astro:assets";
 const { imagePath, title } = Astro.props;
 ---
 
 <div class="item">
-    <div class="polaroid">
-        <img src={imagePath} width="275" title={title} />
-    </div>
+  <div class="polaroid">
+    <Image src={imagePath} width="275" title={title} alt={title} />
+  </div>
 </div>

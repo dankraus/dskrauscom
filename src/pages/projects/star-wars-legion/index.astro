@@ -5,7 +5,7 @@ const allProjects = await Astro.glob("./*.mdx");
 allProjects.sort(
   (a, b) =>
     new Date(b.frontmatter.publishedOn).getTime() -
-    new Date(a.frontmatter.publishedOn).getTime()
+    new Date(a.frontmatter.publishedOn).getTime(),
 );
 ---
 

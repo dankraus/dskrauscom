@@ -5,6 +5,12 @@ pubDate: 2023-01-15
 ---
 
 import Polaroid from "@components/Polaroid.astro";
+import chicagoBean from "@images/about/kraus-chicago-bean.jpg";
+import lloyd from "@images/about/lloyd.jpg";
+import clambake from "@images/about/clambake.jpg";
+import danr2d2 from "@images/about/dan-r2d2.jpg";
+import alexisonfire from "@images/about/alexisonfire.jpg";
+import stairs from "@images/about/stairs.jpg";
 
 Hey. I'm a maker of scale models and miniatures, prop replicas, and software. I pride myself as a generalist that gets interested and excited about a wide range of topics. This site exists to collect my projects or musings in one place.
 
@@ -27,16 +33,13 @@ I decided to re-establish my place on the web after wistfully remembering the fo
 _"Somewhere, something incredible is waiting to be known." - Carl Sagan_
 
 <div class="about-images">
+  <Polaroid imagePath={chicagoBean} title="Selfie at the Chicago Bean" />
+  <Polaroid imagePath={lloyd} title="lloyd" />
+  <Polaroid imagePath={clambake} title="Clambake" />
+  <Polaroid imagePath={danr2d2} title="Dan and his R2-D2" />
   <Polaroid
-    imagePath="/kraus-chicago-bean.jpg"
-    title="Selfie at the Chicago Bean"
-  />
-  <Polaroid imagePath="/lloyd.jpg" title="lloyd" />
-  <Polaroid imagePath="/clambake.jpg" title="Clambake" />
-  <Polaroid imagePath="/dan-r2d2.jpg" title="Dan and his R2-D2" />
-  <Polaroid
-    imagePath="/alexisonfire.jpg"
+    imagePath={alexisonfire}
     title="Alexisonfire at Roadrunner in Boston"
   />
-  <Polaroid imagePath="/stairs.jpg" title="Stairs" />
+  <Polaroid imagePath={stairs} title="Stairs" />
 </div>
