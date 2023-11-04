@@ -17,6 +17,11 @@ h3 {
     text-transform: uppercase;
 }
 
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
 /* @media screen and (min-width: 990px) { */
 .page-wrapper {
     width: 100%;
@@ -89,9 +94,10 @@ footer a:hover {
     color: gray;
 }
 
+/* ABOUT PAGE */
+
 .about-images {
     margin: 40px 0px;
-    ;
 }
 
 .item {
@@ -135,3 +141,40 @@ footer a:hover {
 .item:nth-of-type(6) {
     transform: rotate(-4deg);
 }
+
+/* PHOTOGRAPHS PAGE */
+
+.gallery {
+    /* Set the number of columns */
+    column-count: 2;
+    /* Adjust the horizontal spacing between columns */
+    column-gap: 10px;
+}
+
+.gallery-item {
+    /* Prevent items from breaking across columns */
+    break-inside: avoid-column;
+    /* Adjust the vertical spacing between items */
+    margin-bottom: 10px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    /* max-width: 485px; */
+    height: auto;
+    display: block;
+}
+
+/* Media query for small screens (e.g., screens narrower than 768px) */
+@media (max-width: 768px) {
+    .gallery {
+        /* Display one column for small screens */
+        column-count: 1;
+    }
+}
+
+/* @media (max-width: 1000px) {
+    .gallery-item img {
+        max-width: 200px;
+    }
+} */

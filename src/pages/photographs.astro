@@ -1,0 +1,196 @@
+---
+import { Image } from "astro:assets";
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+import alley from "@images/photos/alley.jpg";
+import artGallery from "@images/photos/art-gallery.jpg";
+import castle from "@images/photos/castle.jpg";
+import chinatownCards from "@images/photos/chinatown-cards.jpg";
+import dublinStreet from "@images/photos/dublin-street.jpg";
+import ferryBinos from "@images/photos/ferry-binos.jpg";
+import ftLauderdaleBalcony from "@images/photos/ft-lauderdale-balcony.jpg";
+import ftLauderdaleLamppost from "@images/photos/ft-lauderdale-lamppost.jpg";
+import globeBarGraffiti from "@images/photos/globe-bar-graffiti.jpg";
+import vwReflection from "@images/photos/vw-reflection.jpg";
+import trinityLibrary from "@images/photos/trinity-library.jpg";
+import hancock from "@images/photos/hancock.jpg";
+import innisDoolin from "@images/photos/innis-doolin.jpg";
+import lloydBw from "@images/photos/lloyd-bw.jpg";
+import moherObrien from "@images/photos/moher-obrien.jpg";
+import redRoom from "@images/photos/red-room.jpg";
+import sleahead from "@images/photos/sleahead.jpg";
+import theSleepingDoug from "@images/photos/the-sleeping-doug.jpg";
+import theSleepingScream from "@images/photos/the-sleeping-scream.jpg";
+import theSleepingSharedMic from "@images/photos/the-sleeping-shared-mic.jpg";
+import torcWaterfall from "@images/photos/torc-waterfall.jpg";
+
+import stairs from "@images/about/stairs.jpg";
+
+const pageTitle = "Photos";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Initialize Masonry after the DOM has loaded
+      var gallery = document.querySelector(".gallery");
+      var masonry = new Masonry(gallery, {
+        itemSelector: ".gallery-item",
+        columnWidth: ".gallery-sizer",
+        gutter: 10, // Adjust the horizontal spacing between columns
+      });
+    });
+  </script>
+
+  <p>A collection of photos on film and digital.</p>
+
+  <div class="gallery">
+    <div class="gallery-sizer"></div>
+    <div class="gallery-item">
+      <Image src={alley} width="485" title="alley" alt="alley" />
+    </div>
+    <div class="gallery-item">
+      <Image
+        src={vwReflection}
+        width="485"
+        title="Street Reflection"
+        alt="Street Reflection"
+      />
+    </div>
+    <div class="gallery-item">
+      <Image
+        src={artGallery}
+        width="485"
+        title="Art Gallery in Dublin"
+        alt="Art Gallery in Dublin"
+      />
+    </div>
+    <div class="gallery-item">
+      <Image
+        src={chinatownCards}
+        width="485"
+        title="Cards in Chinatown"
+        alt="Group of men playing cards in Chinatown Boston"
+      />
+    </div>
+    <div class="gallery-item">
+      <Image
+        src={castle}
+        width="485"
+        title="Dunguaire Castle"
+        alt="Dunguaire Castle in Ireland"
+      />
+    </div>
+    <div class="gallery-item">
+      <Image
+        src={hancock}
+        width="485"
+        title="Hancock Tower"
+        alt="Reflection in Hancock Tower"
+      />
+    </div>
+    <div class="gallery-item">
+      <Image
+        src={ferryBinos}
+        width="485"
+        title="Binocoulars on the Ferry"
+        alt="Binocoulars on the Ferry"
+      />
+    </div>
+    <div class="gallery-item">
+      <Image
+        src={ftLauderdaleBalcony}
+        width="485"
+        title="Balcony View in Ft. Lauderdale"
+        alt="Balcony View in Ft. Lauderdale"
+      />
+    </div>
+    <div class="gallery-item">
+      <Image
+        src={ftLauderdaleLamppost}
+        width="485"
+        title="Lampost in Ft. Lauderdale"
+        alt="Lampost in Ft. Lauderdale"
+      />
+    </div>
+    <div class="gallery-item">
+      <Image
+        src={globeBarGraffiti}
+        width="485"
+        title="The Old Globe Bar"
+        alt="The Old Globe Bar"
+      />
+    </div>
+
+    <div class="gallery-item">
+      <Image
+        src={innisDoolin}
+        width="485"
+        title="Doolin to Arran Islands"
+        alt="Doolin to Arran Islands"
+      />
+    </div>
+    <div class="gallery-item">
+      <Image src={lloydBw} width="485" title="lloydBw" alt="lloydBw" />
+    </div>
+    <div class="gallery-item">
+      <Image
+        src={moherObrien}
+        width="485"
+        title="Cliffs of Moher"
+        alt="Cliffs of Moher"
+      />
+    </div>
+    <div class="gallery-item">
+      <Image src={redRoom} width="485" title="Red Library" alt="Red Library" />
+    </div>
+    <div class="gallery-item">
+      <Image
+        src={sleahead}
+        width="485"
+        title="Sleahead Drive"
+        alt="Sleahead Drive"
+      />
+    </div>
+    <div class="gallery-item">
+      <Image
+        src={trinityLibrary}
+        width="485"
+        title="Trinity College Library"
+        alt="Trinity College Library"
+      />
+    </div>
+    <div class="gallery-item">
+      <Image
+        src={theSleepingDoug}
+        width="485"
+        title="The Sleeping"
+        alt="The Sleeping"
+      />
+    </div>
+    <div class="gallery-item">
+      <Image
+        src={theSleepingScream}
+        width="485"
+        title="The Sleeping"
+        alt="The Sleeping"
+      />
+    </div>
+    <div class="gallery-item">
+      <Image
+        src={theSleepingSharedMic}
+        width="485"
+        title="The Sleeping"
+        alt="The Sleeping"
+      />
+    </div>
+    <div class="gallery-item">
+      <Image
+        src={torcWaterfall}
+        width="485"
+        title="Torc Waterfall"
+        alt="Torc Waterfall"
+      />
+    </div>
+  </div>
+</BaseLayout>
